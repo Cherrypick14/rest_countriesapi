@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: .75em;
+  background: linear-gradient(45deg, #3FBFBF, #D1B2E5);
+  margin: .80em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 20px;
+}
+
+.grid>article>div>img {
+  height: 250px;
+}
+
+/*filter*/
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+section>form>input {
+  width: 100%;
+  padding: .5em;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 3.75em;
+}
+
+section>form>input::placeholder {
+  font-size: .8em;
+}
+
+/**media queries*/
+@media(min-width:600px) {
+  .grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media(min-width:.48rem) {
+  .grid {
+
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+@media(min-width:.62rem) {
+
+  .grid {
+
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
